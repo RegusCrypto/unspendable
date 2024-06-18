@@ -80,15 +80,16 @@ if __name__ == '__main__':
     cont = True
     prefix_string = ""
     vanity_keyword = ""
+    arguments = len(sys.argv)
     # Check the cmd line parameters
-    if len(sys.argv) == 1:
+    if arguments == 1:
       # No arguments passed in
       print("Error: No arguments found.")
       cont = False
-    elif len(sys.argv) == 2:
+    elif arguments == 2:
       # Only prefix string was passed in
       prefix_string = sys.argv[1]
-    elif len(sys.argv) == 3:
+    elif arguments == 3:
       # Both prefix string and vanity keyword were passed in
       prefix_string = sys.argv[1]
       vanity_keyword = sys.argv[2]
